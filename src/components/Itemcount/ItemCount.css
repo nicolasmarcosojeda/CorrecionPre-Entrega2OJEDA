@@ -1,0 +1,57 @@
+/* Estilo para el contenedor principal */
+.Counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Estilo para el contenedor de los botones de incremento y decremento */
+.Controls {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Estilo para los botones de incremento y decremento */
+.Button {
+  background-color: #7aa5ce; /* Color de fondo azul */
+  color: #fff; /* Color de texto blanco */
+  border: none;
+  border-radius: 50%; /* Hacemos que los botones sean círculos */
+  padding: 10px; /* Ajustamos el tamaño de los botones */
+  font-size: 20px; /* Ajustamos el tamaño de la fuente */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin: 5px;
+}
+
+/* Cambio de estilo al pasar el mouse sobre los botones */
+.Button:hover {
+  background-color: #0056b3; /* Color de fondo azul más oscuro */
+}
+
+/* Estilo para la cantidad */
+.Number {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+/* Estilo para el botón "Agregar al carrito" */
+.Button.add {
+  background-color: #007BFF; /* Color de fondo azul */
+  color: #fff; /* Color de texto blanco */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+/* Cambio de estilo al pasar el mouse sobre el botón "Agregar al carrito" */
+.Button.add:hover {
+  background-color: #0056b3; /* Color de fondo azul más oscuro */
+}

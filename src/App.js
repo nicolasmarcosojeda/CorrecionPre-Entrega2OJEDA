@@ -1,43 +1,30 @@
-import './App.css';
-import NavBar from './components/NavBar/NavBar';
-import ItemListConstainer from './components/ItemListContainer/ItemListContainer';
-import ProductCard from './components/ProductCard/Carts';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
+import NavBar from './components/Header/Navbar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import Product from './components/Product/ProductList';
+import ProductDetails from './components/Product/ProductDetails';
+import Body from './components/Body';
 
 function App() {
-  const products = [
-    {
-      imageUrl: "./CartWitged/asset/botines/nike/1.jpeg",
-      productName: "Botines Modelo MERCURIAL",
-      price: "$109.99",
-      description: "Descripción del producto",
-    },
-    {
-      imageUrl: "./CartWitged/asset/botines/nike/2.jpeg",
-      productName: "Botines Modelo MERCURIAL",
-      price: "$109.99",
-      description: "Descripción del producto",
-    },
-    {
-      imageUrl: "./CartWitged/asset/botines/nike/3.jpeg",
-      productName: "Botines Modelo MERCURIAL",
-      price: "$109.99",
-      description: "Descripción del producto",
-    },
-    // Agregar más objetos de productos
-  ];
-
   return (
-    <div className="App">
-      <NavBar />
-      <ItemListConstainer greating={'Bienvenidos'}/>
-
-      <div className="welcome-section">
-        <p>Explora nuestra amplia selección de botines de fútbol y encuentra el par perfecto para ti.</p>
+    <Router>
+      <div className="App">
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<ItemListContainer greeting={'Bienvenido'} />} />
+          <Route path="/productos" element={<Product />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
+          {/* Agrega más rutas según sea necesario */}
+        </Routes>
+        <Body />
+        <Product />
+        <div className="welcome-section">
+          <p>Explora nuestra amplia selección de botines de fútbol y encuentra el par perfecto para ti.</p>
+        </div>
       </div>
-      <ProductCard products={products} />
-    </div>
+    </Router>
   );
 }
 
 export default App;
-
