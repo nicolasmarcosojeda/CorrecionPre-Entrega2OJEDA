@@ -2,23 +2,24 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
 import NavBar from './components/Header/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import Product from './components/Product/ProductList';
-import ProductDetails from './components/Product/ProductDetails';
 import Body from './components/Body';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import Informacion from './components/Body/Informacion';
+
 
 function App() {
   return (
     <Router>
       <div className="App">
         <NavBar />
+        <Body />
         <Routes>
-          <Route path="/" element={<ItemListContainer greeting={'Bienvenido'} />} />
-          <Route path="/productos" element={<Product />} />
-          <Route path="/products/:id" element={<ProductDetails />} />
+          <Route path="/" element={<ItemListContainer/>} />
+          <Route path="/productos" element={<ItemListContainer />} />
+          <Route path="/product/:id" element={<ItemDetailContainer />} />
+          <Route path="/informacion" element={<Informacion />} />
           {/* Agrega más rutas según sea necesario */}
         </Routes>
-        <Body />
-        <Product />
         <div className="welcome-section">
           <p>Explora nuestra amplia selección de botines de fútbol y encuentra el par perfecto para ti.</p>
         </div>

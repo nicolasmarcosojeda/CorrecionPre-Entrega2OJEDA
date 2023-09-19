@@ -34,7 +34,29 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
+}
+
+.nav-link {
+  display: inline;
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease; 
+}
+
+.nav-link:hover {
+  color: #2d24ac;
+}
+
+button {
   padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 h3 {

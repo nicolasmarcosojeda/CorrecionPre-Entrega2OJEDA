@@ -7,14 +7,14 @@ const NavBar = () => {
     <nav>
         <h3>Mr.Soccer</h3>
         <div>
-            <Link to="/">Inicio</Link>
-            <Link to="/productos">Botines</Link>
-            <button>Informacion</button>
-            <button>Seguinos</button>
+            <Link to="/" className="nav-link">Inicio</Link>
+            <Link to="/products/category/Superfly"></Link>
+            <Link to="/products/category/Copa"></Link>
+            <Link to="/informacion" className="nav-link">Información</Link>
         </div>
-        <CartWidget/>
+        <CartWidget />
     </nav>
    ) 
 }
 
-export default NavBar
+export default NavBar;
