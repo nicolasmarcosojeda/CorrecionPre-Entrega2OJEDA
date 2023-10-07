@@ -1,0 +1,24 @@
+/* Estilos para el footer */
+footer {
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px 0; /* Espaciado interior */
+  }
+  
+  /* Estilos para las listas sin viñetas */
+  ul.list-unstyled {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  /* Estilos para los enlaces en el footer */
+  ul.list-unstyled a {
+    text-decoration: none; /* Quitar subrayado */
+    color: #fff; /* Color del texto de los enlaces */
+    transition: color 0.3s; /* Transición suave del color al pasar el ratón */
+  }
+  
+  ul.list-unstyled a:hover {
+    color: #ffc107; /* Color del texto al pasar el ratón */
+  }
+  

@@ -1,0 +1,53 @@
+/* Checkout.css */
+
+.vh-70 {
+    min-height: 70vh;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .justify-content-center {
+    justify-content: center;
+  }
+  
+  .align-items-center {
+    align-items: center;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-header {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .beige {
+    color: beige;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  

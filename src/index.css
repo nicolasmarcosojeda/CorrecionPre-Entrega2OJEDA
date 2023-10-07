@@ -130,3 +130,86 @@ button:hover {
 .btn-add-to-cart:hover {
   background-color: #0056b3;
 }
+
+/* Estilos para la pestaña de selección de tallas */
+.size-selection {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+  position: relative;
+  max-width: 200px; /* Ajusta la anchura máxima según tus necesidades */
+  margin: 0 auto; /* Centra la pestaña en el medio de la pantalla */
+}
+
+.size-selection {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.size-selection {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.size-selection h2 {
+  font-size: 16px; /* Ajusta el tamaño de fuente según tu preferencia */
+  margin: 0; /* Elimina el margen superior e inferior para un mejor ajuste */
+}
+
+/* Estilos para la pestaña de selección de tallas */
+.size-selection {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+/* Estilos para las opciones de tallas */
+.size-options {
+  display: none; /* Por defecto, oculta las opciones de tallas */
+  margin-top: 10px;
+  font-size: 10px;
+}
+
+.size-options.visible {
+  display: block; /* Muestra las opciones de tallas cuando sizeOptionsVisible es true */
+}
+
+.size-button {
+  margin: 2px; /* Menor espacio entre las opciones */
+  padding: 2px 5px; /* Menor espacio alrededor del texto */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000; /* Establece el color del texto en negro */
+}
+
+.size-button.selected {
+  background-color: #007bff; /* Estilo para la talla seleccionada */
+  color: white;
+}
+
+/* Estilos para la flecha de despliegue */
+.size-toggle {
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 15px;
+  transition: transform 0.3s; /* Animación de rotación */
+}
+
+.size-toggle.rotate {
+  transform: rotate(180deg); /* Rota la flecha hacia arriba cuando las opciones de tallas están visibles */
+}

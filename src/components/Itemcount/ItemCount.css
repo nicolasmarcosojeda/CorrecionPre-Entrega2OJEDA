@@ -16,7 +16,7 @@
 /* Estilo para los botones de incremento y decremento */
 .Button {
   background-color: #7aa5ce; /* Color de fondo azul */
-  color: #fff; /* Color de texto blanco */
+  color: #4160c5; /* Color de texto blanco */
   border: none;
   border-radius: 50%; /* Hacemos que los botones sean círculos */
   padding: 10px; /* Ajustamos el tamaño de los botones */
@@ -41,7 +41,7 @@
 /* Estilo para el botón "Agregar al carrito" */
 .Button.add {
   background-color: #007BFF; /* Color de fondo azul */
-  color: #fff; /* Color de texto blanco */
+  color: #130777; /* Color de texto blanco */
   border: none;
   border-radius: 5px;
   padding: 10px 20px;

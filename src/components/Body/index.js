@@ -8,7 +8,7 @@ export const Body = () => {
       <img
         src={bannerImage}
         alt="Banner de la Aplicación"
-        style={{ width: '100%', height: '500px' }} // Cambia '200px' al alto deseado
+        style={{ width: '100%', height: '300px' }} // Cambia '200px' al alto deseado
       />
     </div>
     
